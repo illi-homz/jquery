@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<ul class="tweets">
+    <script id="tweets-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <li>
+            <h1>{{title}}</h1>
+            <p>{{body}}</p>
+        </li>
+        {{/each}}
+    </script>
+</ul>
+
+<script src="handlebars.min-v4.7.6.js"></script>
+<script src="jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
